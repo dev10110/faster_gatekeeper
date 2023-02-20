@@ -1,0 +1,14 @@
+<launch>
+	<arg name="quad" default="SQ01s"/>
+
+	<include file="$(find acl_sim)/launch/start_world.launch"/>	
+	<include file="$(find acl_sim)/launch/imperfect_tracker_and_sim.launch"/>	
+	<include file="$(find global_mapper_ros)/launch/global_mapper_node.launch"/>	
+	<include file="$(find faster)/launch/faster_interface.launch"/>	
+	<include file="$(find faster)/launch/faster.launch"/>	
+
+<!--
+	 <node name="plan_safe_throttler" type="throttle" pkg="topic_tools" args="messages /SQ01s/faster/plan_safe 20" />
+-->
+
+</launch>

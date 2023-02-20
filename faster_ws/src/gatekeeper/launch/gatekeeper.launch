@@ -1,0 +1,12 @@
+<launch>
+	<arg name="quad" default="SQ01s"/>
+	
+    <!-- Arguments -->
+
+    <!-- Start Gatekeeper -->
+	<node ns="$(arg quad)" name="gatekeeper_node" pkg="gatekeeper" type="gatekeeper_node.py" output="screen">
+    	</node>
+	
+	<node ns="$(arg quad)" name="gatekeeper_mindist" pkg="gatekeeper" type="minDist" output="screen">
+    	</node>
+</launch>
