@@ -1,5 +1,8 @@
 gurobi.lic
 
+.catkin_tools/
+
+
 build/
-log/
-install/
+logs/
+devel/

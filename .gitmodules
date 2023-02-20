@@ -1,0 +1,18 @@
+[submodule "faster_ws/src/acl-gazebo"]
+	path = faster_ws/src/acl-gazebo
+	url = git@github.com:dev10110/acl-gazebo.git
+[submodule "faster_ws/src/acl-mapping"]
+	path = faster_ws/src/acl-mapping
+	url = https://gitlab.com/mit-acl/lab/acl-mapping
+[submodule "faster_ws/src/behavior_selector"]
+	path = faster_ws/src/behavior_selector
+	url = https://gitlab.com/mit-acl/fsw/behavior_selector
+[submodule "faster_ws/src/catkin_simple"]
+	path = faster_ws/src/catkin_simple
+	url = https://github.com/catkin/catkin_simple.git
+[submodule "faster_ws/src/faster"]
+	path = faster_ws/src/faster
+	url = git@github.com:dev10110/faster.git
+[submodule "faster_ws/src/snapstack_msgs"]
+	path = faster_ws/src/snapstack_msgs
+	url = git@github.com:dev10110/snapstack_msgs.git
