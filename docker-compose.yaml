@@ -1,0 +1,15 @@
+version: "3"
+
+services:
+        faster:
+                build: .
+                tty: true
+                privileged: true
+                environment:
+                        - DISPLAY=$DISPLAY
+                        - GUROBI_HOME=/opt/gurobi952/linux64
+                volumes:
+                        - /tmp/.X11-unix:/tmp/.X11-unix
+                        - ./faster_ws:/root/faster_ws
+                        - ./gurobi.lic:/opt/gurobi/gurobi.lic:ro
+                network_mode: "host"
